@@ -1,0 +1,129 @@
+/* mulish-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mulish-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/mulish-v13-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mulish-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: Mulish;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+
+.title {
+  text-align: center;
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 56px;
+}
+hr {
+  width: 56px;
+  height: 2px;
+  color: #000;
+}
+.text {
+  color: #7d7987;
+  text-align: center;
+  font-weight: 300px;
+  font-size: 18px;
+  line-height: 30px;
+  width: 955px;
+  margin: 20px auto;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  position: relative;
+}
+.content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/vector.png);
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 671px;
+  top: calc(10% - 90px);
+  left: calc(10% - 350px);
+   z-index: -1; 
+}
+
+.content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/nuqta.png);
+  width: 130px;
+  height: 115px;
+  top: calc(10% - -300px);
+  left: calc(10% - -980px);
+  z-index: -1;
+}
+
+
+.box{
+  width: 350px;
+  height: 324px;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-top: 54px;
+  box-shadow: 10px 40px 50px 0px #E5E9F666;
+  margin-bottom: 37px;
+  background-color: #fff;
+}
+
+.text-box {
+  color: #7d7987;
+  width: 266px;
+  height: 66px;
+}
+
+.link {
+  text-decoration: none;
+  border: 2px solid #00bafc;
+  border-radius: 55px;
+  color: #00bafc;
+  padding: 8px 16px;
+  transition: 0.3s ease all;  
+}
+.link:hover {
+  background: #00bafc;
+  border: 2px solid #00bafc;
+  color: white;
+}
+
+.link:active {
+  background-color: white;
+  color: #00bafc;
+  opacity: 0.7;
+}
+
+.link_box {
+  margin: 20px auto;
+  width: 130px;
+}
